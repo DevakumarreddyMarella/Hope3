@@ -1,0 +1,451 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4caf50;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #ffeb3b;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('hero-img.jpg') no-repeat center center/cover;
+    background-attachment: fixed; 
+    /* background: url('heo-img.jpg') no-repeat center center/cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffeb3b;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #fdd835;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.about-img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Parallax Section */
+.parallax-section {
+    height: 400px;
+    background: url('hero-img.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* This creates the parallax effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 20px;
+}
+
+.parallax-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.parallax-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.parallax-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffeb3b;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #fdd835;
+}
+
+
+/* Impact Section */
+.impact-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.impact-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.impact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 28px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Donate Section */
+.donate-section {
+    padding: 60px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+}
+
+.donate-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.donate-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Navbar - Dropdown for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hide navbar links initially on mobile */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+/* Responsive Design for Mobile */
+
+/* Navbar - Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #4caf50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-links a:hover {
+        color: #ffeb3b;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+/* Hero Section - Mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+        padding: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+}
+
+/* About Section - Mobile */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 15px;
+    }
+
+    .about-section h2 {
+        font-size: 28px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+}
+
+/* Parallax Section - Mobile */
+@media (max-width: 768px) {
+    .parallax-section {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .parallax-content h2 {
+        font-size: 24px;
+    }
+
+    .parallax-content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Impact Section - Mobile */
+@media (max-width: 768px) {
+    .impact-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Gallery Section - Mobile */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Donate Section - Mobile */
+@media (max-width: 768px) {
+    .donate-section {
+        padding: 40px 15px;
+    }
+
+    .donate-section h2 {
+        font-size: 28px;
+    }
+
+    .donate-section p {
+        font-size: 16px;
+    }
+}
+
+/* Footer - Mobile */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}

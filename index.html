@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Haven - A Place to Belong</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Hope<span class="highlight">Haven</span></a>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger Icon -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#impact">Our Impact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Every Child Deserves a Loving Home</h1>
+            <p>Together, we can build brighter futures for vulnerable children.</p>
+            <a href="#donate" class="btn">Support Us</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Hope Haven is a safe shelter where children find love, care, and education. We are committed to giving
+                them a brighter future filled with possibilities.</p>
+            <img src="about-us.jpg" alt="About Hope Haven" class="about-img">
+        </div>
+    </section>
+    <section class="parallax-section">
+        <div class="parallax-content">
+            <h2>Every Smile Tells a Story</h2>
+            <p>Your support helps create these beautiful moments.</p>
+            <a href="#donate" class="btn">Be a Part of It</a>
+        </div>
+    </section>
+
+    <!-- Our Impact Section -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="impact-cards">
+                <div class="card">
+                    <h3>500+</h3>
+                    <p>Children Sheltered</p>
+                </div>
+                <div class="card">
+                    <h3>1000+</h3>
+                    <p>Volunteers Engaged</p>
+                </div>
+                <div class="card">
+                    <h3>300+</h3>
+                    <p>Successful Adoptions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Our Moments</h2>
+            <div class="gallery-grid">
+                <img src="gallery1.jpg" alt="Happy children">
+                <img src="gallery1.jpg" alt="Learning session">
+                <img src="gallery1.jpg" alt="Volunteer interaction">
+                <img src="gallery1.jpg" alt="Festival celebrations">
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="donate-section">
+        <div class="container">
+            <h2>Make a Difference</h2>
+            <p>Your small contribution can bring a smile to a child’s face.</p>
+            <a href="#" class="btn">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hope Haven | Bringing Smiles, Changing Lives</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Toggle menu for mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+    </script>
+</body>
+
+</html>
